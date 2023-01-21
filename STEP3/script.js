@@ -8,12 +8,12 @@ $(function(){
         audio: true
     };
     constraints.video.width = {
-        min: 320,
-        max: 320
+        min: 640,
+        max: 640
     };
     constraints.video.height = {
-        min: 240,
-        max: 240        
+        min: 480,
+        max: 480        
     };
 
     navigator.mediaDevices.getUserMedia(constraints)
@@ -26,7 +26,7 @@ $(function(){
         });
 
     peer = new Peer({
-        key: 'APIKEY',
+        key: 'eaef9e8b-d312-4086-92ef-1a3f81ebe9fe',
         debug: 3
     });
 
